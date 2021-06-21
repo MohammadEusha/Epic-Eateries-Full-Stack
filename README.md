@@ -28,7 +28,7 @@ The Website is about foods ordering services. In this site you will find some ca
 
 ### Technology :-
 
-• Frontend : CSS, Bootstrap, React Bootstrap, JavaScript, React JS, React Redux
+• Frontend : CSS, Bootstrap, React Bootstrap, JavaScript, React JS, React Redux, Redux Thunk
 
 • Backend : NodeJS, Express, Postman, Mongo DB.
 
