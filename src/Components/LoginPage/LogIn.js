@@ -98,7 +98,7 @@ const LogIn = () => {
                     <div className="col-md-6">
                         <div className="d-flex align-items-center justify-content-center pt-5">
                             <div id="booking-area" className="booking-form">
-                                <h1>Grocery Store</h1>
+                                <h1>Epic Eateries</h1>
                                 <form onSubmit={handleSubmit} x>
                                     <div className="input-group ">
                                         {newUser && <h4>Name</h4>}
