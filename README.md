@@ -1,16 +1,16 @@
 # Website Name
 
-Website Name : Computer Garage
+Website Name : Epic Eateries
 
 # Website Link
 
-https://computer-repair-web.web.app/
+https://epic-eateries-pro.web.app/
 
 # About this Website
 
 ### Project Details :-
 
-The Website is about your computer repair services . In this site you will find some cards about names of services , its prices and its descriptions . You will find a button in every card named as Repair . Click on the button then login with your Google account and repair your computer.
+The Website is about foods ordering services. In this site you will find some cards about names of foods, its prices and its descriptions . You will find a button in every card named as Order Now. Click on the button then login with your Google account and order your foods.
 
 ### Features :-
 
@@ -20,17 +20,15 @@ The Website is about your computer repair services . In this site you will find 
 
 • Customer Panel
 
-• Service Add System
+• Food Add System
 
 • Customer Review System
 
 • Stripe Payment System
 
-• Status Update
-
 ### Technology :-
 
-• Frontend : CSS, Bootstrap, JavaScript, React JS
+• Frontend : CSS, Bootstrap, React Bootstrap, JavaScript, React JS
 
 • Backend : NodeJS, Express, Postman, Mongo DB.
 
