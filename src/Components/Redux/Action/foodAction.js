@@ -4,7 +4,7 @@ export const order = (payload) => {
     return async (dispatch, getState) => {
         const dataToPost = { ...payload }
         delete dataToPost._id
-        await axios.post('http://localhost:5000/allOrders', dataToPost)
+        await axios.post('https://secure-inlet-25486.herokuapp.com/allOrders', dataToPost)
 
         dispatch(
             {
@@ -17,7 +17,7 @@ export const order = (payload) => {
 
 export const loadFoods = () => {
     return (dispatch, getState) => {
-        fetch('http://localhost:5000/foods')
+        fetch('https://secure-inlet-25486.herokuapp.com/foods')
             .then(res => res.json())
             .then(data => {
                 dispatch(
@@ -35,7 +35,7 @@ export const loadFoods = () => {
 export const addFoods = (payload) => {
     return async (dispatch, getState) => {
 
-        await axios.post('http://localhost:5000/addFoods', payload)
+        await axios.post('https://secure-inlet-25486.herokuapp.com/addFoods', payload)
 
         dispatch(
             {

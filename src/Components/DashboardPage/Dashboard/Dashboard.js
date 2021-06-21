@@ -32,7 +32,7 @@ const Dashboard = () => {
             image: imageURL
         }
 
-        const url = `http://localhost:5000/addFoods`
+        const url = `https://secure-inlet-25486.herokuapp.com/addFoods`
         console.log(reviewData)
 
         fetch(url, {

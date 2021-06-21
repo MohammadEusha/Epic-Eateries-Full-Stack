@@ -29,7 +29,7 @@ const AddReviews = () => {
             img: imageURL
         }
 
-        const url = `http://localhost:5000/addReviews`
+        const url = `https://secure-inlet-25486.herokuapp.com/addReviews`
         console.log(reviewData)
 
         fetch(url, {

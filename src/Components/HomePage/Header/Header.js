@@ -9,7 +9,7 @@ const Header = () => {
 
     // const addFoods = () => {
 
-    //     const url = `http://localhost:5000/allFoods`
+    //     const url = `https://secure-inlet-25486.herokuapp.com/allFoods`
     //     fetch(url, {
     //         method: 'POST',
     //         headers: { 'Content-Type': 'application/json' },

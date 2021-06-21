@@ -19,7 +19,7 @@ const ManageFoods = () => {
     const [foods, setFoods] = useState([])
     useEffect(() => {
 
-        fetch('http://localhost:5000/foods')
+        fetch('https://secure-inlet-25486.herokuapp.com/foods')
             .then(res => res.json())
             .then(data => setFoods(data))
 

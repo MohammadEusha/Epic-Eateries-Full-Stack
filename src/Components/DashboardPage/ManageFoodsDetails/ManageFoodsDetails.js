@@ -7,7 +7,7 @@ const ManageFoodsDetails = (props) => {
     const { _id, foodName, price, weight } = props.food
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://secure-inlet-25486.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

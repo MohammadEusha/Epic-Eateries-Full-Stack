@@ -1,5 +1,5 @@
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Appbar from '../../HomePage/Appbar/Appbar';
 import Swal from 'sweetalert2';
 import './OrderedFood.css'
@@ -7,6 +7,7 @@ import { useSelector } from 'react-redux';
 
 import OrderedFoodsCard from '../OrderedFoodsCard/OrderedFoodsCard';
 import Payment from '../Payments/Payment/Payment';
+import { UserContext } from '../../../App';
 
 const OrderedFood = () => {
     const foods = useSelector((state) => {
@@ -18,8 +19,9 @@ const OrderedFood = () => {
 
     // const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
-    const [orderFoods, setOrderFoods] = useState(false)
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
+    const [orderFoods, setOrderFoods] = useState(false)
 
 
 
@@ -28,6 +30,12 @@ const OrderedFood = () => {
         display =
             <div>
                 <Appbar></Appbar>
+                <div>
+                    <h3 className="mt-5 pt-5 text-center container">Hi <span className="text-danger">{loggedInUser.name}</span>. Please Pay For Getting Your Foods.If You Want To Update Your Information PLease Click On the Update Information Button.</h3>
+                    <div className="d-grid text-center container mt-2">
+                        <button onClick={() => setOrderFoods(!orderFoods)} variant="secondary" className="btn-lg  btn-block btn-danger" block>Update Information</button>
+                    </div>
+                </div>
                 <Container style={{ paddingBottom: "210px" }} id="Contact" className=" mt-5 mb-5 pt-5" fluid>
                     <Row className=" mt-5">
                         <Col md={2}></Col>
@@ -94,7 +102,7 @@ const OrderedFood = () => {
 
 
     return (
-        <div>
+        <div style={{ backgroundColor: "#050c1a", color: "white", height: "980px" }}>
             {display}
         </div>
     );
